@@ -129,7 +129,7 @@ export default function AddGroup() {
                             <label>
                                 Boshlanish vaqti:
                                 <input
-                                    type="text"
+                                    type="time"
                                     name="boshlanishVaqti"
                                     value={formData.boshlanishVaqti}
                                     onChange={handleInputChange}
@@ -138,7 +138,7 @@ export default function AddGroup() {
                             <label>
                                 Tugash vaqti:
                                 <input
-                                    type="text"
+                                    type="time"
                                     name="tugashVaqti"
                                     value={formData.tugashVaqti}
                                     onChange={handleInputChange}
@@ -147,7 +147,7 @@ export default function AddGroup() {
                             <label>
                                 Kurs boshlanish sanasi:
                                 <input
-                                    type="text"
+                                    type="date"
                                     name="kursBoshlanishSanasi"
                                     value={formData.kursBoshlanishSanasi}
                                     onChange={handleInputChange}
@@ -156,7 +156,7 @@ export default function AddGroup() {
                             <label>
                                 Kurs tugash sanasi:
                                 <input
-                                    type="text"
+                                    type="date"
                                     name="kursTugashSanasi"
                                     value={formData.kursTugashSanasi}
                                     onChange={handleInputChange}
