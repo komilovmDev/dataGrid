@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.addgroup {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .data-table th,
+  .data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .data-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .modal-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .modal-content form label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .modal-content form label input {
+    width: 100%;
+    height: 35px;
+  }
+  .modal-content form label select {
+    width: 100%;
+    height: 35px;
+  }
+
+  .modal-content form button {
+    width: 100%;
+    height: 35px;
+    margin-top: 20px;
+  }
+  
+#plus {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    padding: 10px 5px;
+    border: 1px solid blue;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
