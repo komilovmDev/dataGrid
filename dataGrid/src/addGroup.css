@@ -1,12 +1,8 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 .addgroup {
   width: 100%;
   height: 100vh;
   position: relative;
+  background-color: transparent;
 }
 table {
     font-family: arial, sans-serif;
@@ -20,6 +16,9 @@ table {
     padding: 8px;
   }
   
+  .none {
+    display: none;
+  }
 
 
 .modal {
@@ -33,8 +32,15 @@ table {
     justify-content: center;
     align-items: center;
   }
-  
+  .modal .close {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.021);
+  }
   .modal-content {
+    position: absolute;
+    right: 0;
+    height: 100%;
     background-color: #fff;
     padding: 20px;
     max-width: 400px;

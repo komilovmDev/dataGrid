@@ -76,12 +76,14 @@ export default function AddGroup() {
         });
     };
 
+
     return (
         <div className='addgroup'>
             <button onClick={() => setModalOpen(true)} id='plus'>Malumot qo'shish</button>
 
             {modalOpen && (
-                <div className="modal">
+                <div className='modal'>
+                    <div className="close" onClick={() => setModalOpen(false)}></div>
                     <div className="modal-content">
                         <h2>Malumot qo'shish</h2>
                         <form onSubmit={handleSubmit}>
