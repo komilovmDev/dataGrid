@@ -14,6 +14,7 @@ export default function AddGroup() {
         kursTugashSanasi: '',
         xonaRaqami: '',
         narxi: '',
+        PulOladiganOyniKiritish: ''
     });
 
     const [selectedOqtuvchi, setSelectedOqtuvchi] = useState('');
@@ -29,6 +30,7 @@ export default function AddGroup() {
             kursTugashSanasi: '2023-12-30',
             xonaRaqami: '5',
             narxi: 1500000,
+            PulOladiganOyniKiritish: '2033-23-23'
         },
     ]);
 
@@ -53,6 +55,7 @@ export default function AddGroup() {
             kursTugashSanasi: formData.kursTugashSanasi,
             xonaRaqami: formData.xonaRaqami,
             narxi: formData.narxi,
+            PulOladiganOyniKiritish: formData.PulOladiganOyniKiritish,
         };
 
         setData((prevData) => [...prevData, newCourse]);
@@ -69,6 +72,7 @@ export default function AddGroup() {
             kursTugashSanasi: '',
             xonaRaqami: '',
             narxi: '',
+            PulOladiganOyniKiritish: ''
         });
     };
 
@@ -180,6 +184,15 @@ export default function AddGroup() {
                                     onChange={handleInputChange}
                                 />
                             </label>
+                            <label>
+                                Pul Oladigan Oyni Kiritish:
+                                <input
+                                    type="date"
+                                    name="PulOladiganOyniKiritish"
+                                    value={formData.PulOladiganOyniKiritish}
+                                    onChange={handleInputChange}
+                                />
+                            </label>
                             <button type="submit">Qo'shish</button>
                         </form>
                     </div>
@@ -198,6 +211,7 @@ export default function AddGroup() {
                     <th>Kurs tugash sanasi</th>
                     <th>Xona raqami</th>
                     <th>Narxi</th>
+                    <th>Pul Oladigan Oyni Kiritish</th>
                 </tr>
                 {data.map((course, index) => (
                     <tr key={index}>
@@ -211,6 +225,7 @@ export default function AddGroup() {
                         <td>{course.kursTugashSanasi}</td>
                         <td>{course.xonaRaqami}</td>
                         <td>{course.narxi}</td>
+                        <td>{course.PulOladiganOyniKiritish}</td>
                     </tr>
                 ))}
             </table>
